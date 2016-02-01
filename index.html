@@ -43,7 +43,7 @@
 			var myChart = new dimple.chart(svg, data);
 			var y = myChart.addAxis("y", "Passenger Class");
 			var x = myChart.addCategoryAxis("x", "Age");
-			myChart.addSeries( "Survive", dimple.plot.scatter);
+			myChart.addSeries( "Survive", dimple.plot.bar);
 			myChart.addLegend(1100, 10, 330, 20, "right");
 			myChart.assignColor("Did Not Survive", "red")
 			myChart.assignColor("Survived", "green")
