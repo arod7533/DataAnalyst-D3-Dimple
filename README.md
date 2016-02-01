@@ -9,4 +9,4 @@ characteristics. The visualization illustrates the most important chracteristic 
 <br>
 <strong>Feedback:</strong>
 <br>
-<strong>Resources:</strong><a href="https://www.kaggle.com/c/titanic">Kaggle: Titanic</a>
+<strong>Resources:</strong> <a href="https://www.kaggle.com/c/titanic">Kaggle: Titanic</a>
