@@ -6,7 +6,7 @@
 	<script src="http://dimplejs.org/dist/dimple.v2.0.0.min.js"></script>
 	<style type="text/css">
 	h1	{
-		text-indent: 450px;
+		text-indent: 250px;
 		font-family: arial;
 	}
 
@@ -27,7 +27,7 @@
 
 			d3.select("body")
 				.append("h1")
-				.text("Survivorship of the Titanic");
+				.text("Titanic: Male/Female Survival Rate by Passenger Class");
 
 			var svg = d3.select("body")
 				.append("svg")
@@ -36,16 +36,22 @@
 				.append("g")
 					.attr("class", "chart");
 
+
 		/*
 			Dimple.js chart
 		*/
 
 			var myChart = new dimple.chart(svg, data);
-			var x = myChart.addCategoryAxis("x", "Passenger Class");
+			var x = myChart.addCategoryAxis("x", ["Passenger Class", "Sex"]);
 			var y = myChart.addMeasureAxis("y", "Passenger Count");
-			myChart.addSeries( "Survive" , dimple.plot.bar);
-			myChart.addLegend(10, 10, 1225, 30, "right");
+			var s = myChart.addSeries( "Survive" , dimple.plot.bar);
+			myChart.addLegend(10, 10, 455, 30, "right");
+			myChart.assignColor("Survived", "#d6f5d6");
+			myChart.assignColor("Did Not Survive", "#ffb3b3");
+			y.showGridlines = false;
 			myChart.draw();
+			x.titleShape.text("Passenger Class and Sex (Male/Female)")
+
 
 		}
 	</script>
