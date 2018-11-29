@@ -1,4 +1,4 @@
-# DataAnalyst-dimple-d3
+# Titanic Visualization D3 Dimple
 <h1>Data Visualization of the Survivorship on the Titanic</h1>
 
 <strong>Summary:</strong> This data visualization was created using D3.js and Dimple.js. The dataset is a list of passengers from the Titanic and their specific
